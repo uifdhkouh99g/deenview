@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeenView - A Halal Video Platform</title>
+    <title>DeenView - Halal Video Platform</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f4f8;
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            flex-direction: column;
+            color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
+            backdrop-filter: brightness(0.6);
         }
         h1 {
-            color: #2c3e50;
+            font-size: 3em;
+            margin-bottom: 20px;
         }
         p {
-            color: #34495e;
+            font-size: 1.5em;
+            width: 80%;
             max-width: 600px;
         }
-        footer {
-            position: absolute;
-            bottom: 10px;
-            font-size: 12px;
-            color: #95a5a6;
+        .button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to DeenView</h1>
     <p>A halal video platform featuring Islamic content, work and business news, and other permissible (halal) entertainment. Stay connected with faith-based, positive and valuable media.</p>
-
-    <footer>
-        &copy; 2025 DeenView. All rights reserved.
-    </footer>
+    <a href="#" class="button">Explore Videos</a>
 </body>
-</html>added index.html
+</html>
