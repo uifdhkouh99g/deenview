@@ -3,82 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DeenView - Halal Video Platform</title>
+  <title>DeenView - Home</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
     }
     header {
-      background: #008080;
+      background-color: #00704A;
       color: white;
-      padding: 15px;
       text-align: center;
-      font-size: 24px;
-      font-weight: bold;
+      padding: 20px 10px;
     }
-    .video-container {
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .videos {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
     }
     .video-card {
-      background: white;
-      padding: 15px;
-      margin-bottom: 20px;
-      width: 90%;
-      max-width: 600px;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      width: 320px;
     }
-    .video-card iframe {
+    iframe {
       width: 100%;
-      height: 315px;
-      border: none;
-      border-radius: 10px;
+      height: 180px;
     }
     .video-info {
-      margin-top: 10px;
-      text-align: center;
+      padding: 10px;
     }
-    .video-title {
+    .video-info h2 {
       font-size: 18px;
-      font-weight: bold;
+      margin: 0 0 8px 0;
     }
-    .video-date {
+    .video-info p {
       font-size: 14px;
-      color: #555;
-      margin-top: 5px;
+      color: gray;
+      margin: 0;
     }
   </style>
 </head>
 <body>
 
 <header>
-  Welcome to DeenView
+  <h1>Welcome to DeenView</h1>
+  <p>A Halal Video Platform</p>
 </header>
 
-<div class="video-container">
-
+<div class="videos">
   <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/your_video_id_1" frameborder="0" allowfullscreen></iframe>
     <div class="video-info">
-      <div class="video-title">Example Islamic Video Title</div>
-      <div class="video-date">Uploaded on: April 19, 2025</div>
+      <h2>Video Title 1</h2>
+      <p>Uploaded on: April 19, 2025</p>
     </div>
   </div>
 
   <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/your_video_id_2" frameborder="0" allowfullscreen></iframe>
     <div class="video-info">
-      <div class="video-title">Another Work & Business News</div>
-      <div class="video-date">Uploaded on: April 18, 2025</div>
+      <h2>Video Title 2</h2>
+      <p>Uploaded on: April 18, 2025</p>
     </div>
   </div>
-
 </div>
 
 </body>
