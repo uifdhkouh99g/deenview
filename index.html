@@ -84,6 +84,31 @@
     </div>
   </div>
 </div>
+<script>
+  const form = document.querySelector('form');
+  const videoLinkInput = form.querySelector('input[type="text"]');
+  const titleInput = form.querySelectorAll('input[type="text"]')[1];
 
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const link = videoLinkInput.value;
+    const title = titleInput.value;
+
+    if (link && title) {
+      const videoSection = document.createElement('div');
+      videoSection.style.margin = "20px";
+      videoSection.innerHTML = `
+        <iframe width="360" height="215" src="${link.replace("watch?v=", "embed/")}" frameborder="0" allowfullscreen></iframe>
+        <h3>${title}</h3>
+        <p>${new Date().toLocaleDateString()}</p>
+        <hr/>
+      `;
+      document.body.appendChild(videoSection);
+
+      form.reset();
+    }
+  });
+</script>
 </body>
 </html>
